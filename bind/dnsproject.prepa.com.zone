@@ -1,0 +1,14 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	myteam.mlv.com. root.myteam.mlv.com. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	myteam.mlv.com.
+@	IN	A	192.168.65.4
+@	IN	AAAA	::1
